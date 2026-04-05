@@ -1,0 +1,591 @@
+@import "./colortheme.scss";
+*{font-family: $fontFamilyRoboto}
+::-webkit-scrollbar {
+	background-color: #fff;
+	
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0.2)
+}
+
+::-webkit-scrollbar-track:hover {
+	background-color: rgba(0, 0, 0, 0.2)
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #a0a0a5;
+}
+
+::-webkit-scrollbar-button {
+	display: none
+}
+body {
+ $fontFamilyRoboto:'Roboto' ;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  color: $textColorPrimary;
+  font-weight: 300;
+  font-size: 0.875rem !important;
+  letter-spacing: 0.05em;
+  background:#f5f8fa;
+
+  .fullPageContent {
+    padding: 0 30px;
+  }
+
+  .mainCard { background: transparent;}
+  p {
+    font-size: 0.875rem;
+  }
+
+  a {
+    color: $anchorColor;
+    font-size: 0.875rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: 0 none;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $anchorHover;
+      text-decoration: none;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      text-decoration: none !important;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  ul,
+  ol,
+  dl,
+  label {
+    font-size: 0.875rem;
+   $fontFamilyRoboto:'Roboto' ;
+  }
+  img {
+    max-width: 100%;
+    border-style: none;
+    height: auto;
+    width: auto;
+  }
+
+  code {
+   $fontFamilyRoboto:'Roboto' ;
+  }
+  .mt20 {
+    margin-top: 20px;
+  }
+  .mt30 {
+    margin-top: 30px;
+  }
+  .mt40 {
+    margin-top: 40px;
+  }
+  .mt50 {
+    margin-top: 50px;
+  }
+  .mt60 {
+    margin-top: 60px;
+  }
+  .mt70 {
+    margin-top: 70px;
+  }
+  .mt80 {
+    margin-top: 80px;
+  }
+  .mt90 {
+    margin-top: 90px;
+  }
+  .mt100 {
+    margin-top: 100px;
+  }
+  .pt20 {
+    padding-top: 20px;
+  }
+  .pt30 {
+    padding-top: 30px;
+  }
+  .pt40 {
+    padding-top: 40px;
+  }
+  .pt50 {
+    padding-top: 50px;
+  }
+  .pt60 {
+    padding-top: 60px;
+  }
+  .pt70 {
+    padding-top: 70px;
+  }
+  .pt80 {
+    padding-top: 80px;
+  }
+  .pt90 {
+    padding-top: 90px;
+  }
+  .pt100 {
+    padding-top: 100px;
+  }
+  div.mb0 {
+    margin-bottom: 0;
+  }
+
+  .pB20 {
+    padding-bottom: 20px;
+  }
+  .pB30 {
+    padding-bottom: 30px;
+  }
+  .pB40 {
+    padding-bottom: 40px;
+  }
+  .pB50 {
+    padding-bottom: 50px;
+  }
+  .pB60 {
+    padding-bottom: 60px;
+  }
+  .pB70 {
+    padding-bottom: 70px;
+  }
+  .pB80 {
+    padding-bottom: 80px;
+  }
+  .pB90 {
+    padding-bottom: 90px;
+  }
+  .pB100 {
+    padding-bottom: 100px;
+  }
+  .topBotBorder {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .topBotPad10 {
+    padding: 10px 0;
+  }
+  .border-pad {
+    padding: 1rem;
+    border: 1px solid #ebedf2;
+    .head-title {
+      margin-bottom: 0.75rem;
+      padding: 0.5rem 0.75rem;
+      background-color: #ebedf2;
+      border-radius: 4px;
+    }
+  }
+  .themeTwo {
+    background: $themeBgSecondary;
+    color: #fff;
+    *{
+      color: #fff !important;
+    }
+  }
+  .borderRad5{
+    border-radius: 5px;
+  }
+  .drawflowSection {
+    height: 90vh;
+    .drawflow {
+      .drawflow-node {
+        width: auto;
+        min-height: inherit;
+        background: none;
+        padding: 20px 35px;
+        .nodeIcons {
+          font-size: 3em;
+        }
+        .input {
+          left: -49px;
+        }
+        .output {
+          right: -24px;
+        }
+      }
+    }
+  }
+  .globalBtn {
+    background: $themeBgSecondary;
+    color: $textColorSecondary;
+    margin-top: 20px !important;
+   $fontFamilyRoboto:'Roboto' ;
+    
+    &:hover {
+      background: $themeBgSecondaryHover;
+    }
+  }
+  .globalCheckboxLabel {
+    .MuiFormControlLabel-label {
+      font-size: 0.9em;
+     $fontFamilyRoboto:'Roboto' ;
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+  }
+  .contentBox {
+    flex-grow: 1;
+    margin-top: 55px !important;
+    
+    width: 100%;
+    transition: all 0.2 ease-in-out;
+    background-color: #f5f8fa;
+  }
+  .pageHeading {
+    margin-bottom: 50px;
+  }
+  .page-title {
+    color: #181c32;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  
+  .card-title {
+    margin-bottom: 1.75rem;
+  }
+  .MuiDataGrid-root {
+    .MuiDataGrid-colCell {
+      .MuiDataGrid-menuIcon {
+        visibility: visible;
+      }
+    }
+  }
+  .cardHolder {
+   
+    .mainCard {
+      .mainCardHeader{
+        padding: 1.4rem 0;
+        .MuiCardHeader-action {
+          margin: 0;
+          
+
+           nav
+           {
+            ol{
+              li{
+                a{
+                  font-weight: 600;}
+              }
+              p {
+                font-weight: 600;
+                color: #a1a5b7!important;
+                font-size: 0.875rem;
+               }
+            }
+           }
+           
+           
+          
+        }
+
+        
+      }
+      .mainCardContent {
+        padding: 1rem 1rem;
+        background-color: #fff;
+        box-shadow: -4px 4px 20px 0px #5959590d;
+        border: 1px #59595929 solid;
+        .allMaindataGridTable{
+          min-height: 64vh;
+         .dataGridTable {
+          border-radius: 0;
+          font-size: 0.875rem;
+           .MuiDataGrid-colCellTitle {
+            font-weight: 600;
+        }
+      }
+    }
+    
+
+      }
+    }
+  }
+  .progressbarHolder {
+    height: 10px;
+    border-radius: 5px;
+  }
+  .error {
+    background: $error;
+  }
+  .errorLight {
+    background: lighten($error, 25%);
+  }
+  .warning {
+    background: $wraning;
+  }
+  .warningLight {
+    background: lighten($wraning, 25%);
+  }
+  .info {
+    background: $info;
+  }
+  .infoLight {
+    background: lighten($info, 25%);
+  }
+  .success {
+    background: $sucess;
+  }
+  .successLight {
+    background: lighten($sucess, 25%);
+  }
+  .iconHolder {
+    margin-bottom: 20px;
+    .iconBtn {
+      border-radius: 2px;
+      border: 1px solid #dbe3e9;
+      padding: 0;
+      color: #3e4b5b;
+      margin-right: 5px;
+      background: #f5f8fa;
+      font-weight: 600;
+      width: 33px;
+      height: 33px;
+
+      span {
+        svg{
+          font-size: 1.3rem; color: #2e3192 ; 
+          &:hover {color:#ee3a46 ;}
+        }
+        a{
+          svg{
+            font-size: 1.3rem;color: #2e3192 ;
+            &:hover {color: #ee3a46;}
+          }
+        }
+      }
+
+      &:hover {
+        color: #fff;
+       
+      }
+    }
+  }
+  .actionTd {
+    .actionBtn {
+      line-height: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      font-size: 0.8rem;
+      padding: 4px;
+      border-radius: 4px;
+      transition: all 0.3s;
+      margin-right: 10px;
+    }
+    .actionIcon {
+      font-size: 1rem;
+      &:hover {
+        background-color: #ef3d46;
+        color: #fff;
+      }
+    }
+  }
+  .profile-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  .file-detail {
+    padding: 0.5rem 1rem;
+    background-color: #ebedf2;
+    display: flex;
+    justify-content: space-between !important;
+    margin-bottom: 50px;
+  }
+  .file-detail li {
+    display: inline-block;
+  }
+  .mb-0 {
+    margin-bottom: 0 !important;
+  }
+  .tabHolder {
+    .tabScroller {
+      .tabList {
+        background: $themeBgPrimary;
+        justify-content: space-between;
+        border-radius: 3px;
+        .tabButton {
+          flex: 1 1 auto;
+        }
+        .tabselected {
+          background: $themeBgSecondary;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .histoGramHolder {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .chartHolder {
+      position: absolute;
+      width: 60%;
+      transform: rotate(-90deg);
+    }
+    .chartLine {
+      margin-top: 1px;
+      background: none;
+    }
+  }
+  .viewProgress {
+    position: relative;
+    z-index: 10;
+  }
+  .hiddenProgress {
+    position: absolute;
+    z-index: 9;
+    color: #ddd;
+  }
+  .hidden {
+    display: none;
+  }
+  .fileInput {
+    display: none;
+  }
+  .fileUploadBox {
+    outline: 2px dashed #508abc;
+    outline-offset: -10px;
+    transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+    background: #e7eef6;
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #4588c2;
+    }
+    p {
+      margin: 0;
+      color: #1e1e1e;
+      font-size: 13px;
+    }
+    span {
+      color: #bebaba;
+    }
+    .UploadBtn {
+      background: #5dc0de;
+      margin: 0.7rem 0 1.5rem 0;
+      box-shadow: none;
+      color: #fff;
+      span {
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 700;
+        box-shadow: none;
+      }
+    }
+  }
+  .tableHead{
+    th{
+      font-weight: 600;
+    }
+  }
+  .buttonsHolder{
+    justify-content: flex-end;
+  }
+  .dataTableholder{
+    .MuiTableCell-body {
+      vertical-align: top;
+    }
+  }
+  .tabButton{
+    border: 1px solid #ddd;
+    background: lighten($textColorPrimary,45%);
+    position: relative;
+    top: 1px;
+  }
+  .tabButtonSelected{
+    background: #fff;
+    border-bottom: none;
+  }
+  .tabIndicator {
+    bottom: auto;
+    top: 0;
+  }
+  .tabContainer {
+    border-bottom: 1px solid #ddd;
+  }
+  .drwaerHolder{
+    .customDrawer {
+      width: 20vw;
+      flex-shrink:0;
+      position: relative;
+      .customDrawerPaper {
+        width: 20vw;
+        position: relative;
+      }
+    }
+    .drawerContent {
+      flex-grow: 1;
+      padding-left: 40px;
+      height: 400px;
+      overflow-y: scroll;
+      padding-bottom: 50px;
+    }
+    .profileTitle{
+      .profileTitleTwo {
+        font-size: inherit;
+      }
+    }
+  }
+  .mainAccordian{
+    font-weight: 600;
+  }
+  .buttonHolder{
+    flex-direction: row-reverse;
+  }
+  .buttonHolder.expanded{
+    min-height: inherit;
+  }
+  .expandIcon{
+    margin-right: 0;
+    font-size: 1em;
+  }
+  .expandIcon.expanded{
+    transform: rotate(90deg);
+  }
+  .buttonContent{
+    align-items: center;
+    svg{
+      margin-right: 10px;
+    }
+  }
+  .buttonContent.expanded{
+    margin: 0;
+    min-height: inherit;
+
+  }
+  .accordianDetails{
+    padding: 0 0 0 40px;
+    svg{
+      margin-right: 10px;
+    }
+    .detailsList{
+      padding: 0;
+      li{
+        padding: 5px 0;
+      }
+    }
+  }
+  .columnInfo{
+    font-size: 3em;
+    padding: 0 20px 0 0;
+  }
+}
+

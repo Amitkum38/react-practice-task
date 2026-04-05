@@ -1,0 +1,24 @@
+@use '../../Scss/index' as *;
+.main-header {
+    @include displayFlex;
+    background: $brand-bgclr;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
+    padding: 0 15px;
+       
+}
+
+.app-layout-header {
+    height: 75px;
+    background: $brand-bgclr;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+
+
+
+   
+    

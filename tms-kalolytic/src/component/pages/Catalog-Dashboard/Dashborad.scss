@@ -1,0 +1,224 @@
+@import "../../../index.scss";
+body {
+  .dashboardDataCatalog {
+    padding-top: 35px !important;
+
+    .pageHeading {
+      margin-bottom: 35px !important;
+    }
+  }
+
+  .dashboard {
+    .boxBordernoneH5 {
+      h5 {
+        border-top: none !important;
+        padding: 0 !important;
+      }
+    }
+
+   
+    .box {
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 0.25rem;
+      margin: 15px 0 30px;
+      transition: all 0.3s;
+      box-shadow: 20px 20px 20px 20px #5959590d;
+      border: 1px #59595929 solid;
+      .boxheading {
+        margin-top: 20px;
+      }
+
+      h5 {
+        color: #2e3192;
+        margin-bottom: 0;
+        border-top: 1px solid #f2edf3;
+        padding-top: 15px;
+        font-size: 1.15rem;
+        font-weight: 700;
+      }
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0) 0px 1px 4px 0px;
+        h5 {
+          color: $anchorHover !important;
+        }
+        .boxheading {
+          color: $anchorHover !important;
+        }
+      }
+
+      .icon-box {
+        background: linear-gradient(
+          60deg,
+          rgb(166, 206, 57),
+          rgb(156, 199, 36)
+        );
+        padding: 15px;
+        margin-top: -30px;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 20px 0px,
+          rgba(255, 152, 0, 0.4) 0px 7px 10px -5px;
+        color: #fff;
+        margin-right: 20px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 50px;
+        text-align: center;
+        img {
+          height: 50px;
+        }
+      }
+      &:hover .icon-box {
+        background: linear-gradient(60deg, rgb(239, 61, 70), rgb(243, 28, 39));
+      }
+    }
+    .box-heading {
+      margin-bottom: 0;
+      .svgIcons {
+        font-size: 3.5em;
+      }
+      svg path {
+        stroke: inherit;
+      }
+    }
+
+    .box-content {
+      border-top: 1px solid #f2edf3;
+      padding-top: 15px;
+      span {
+        color: gray;
+        height: 105px;
+        overflow: hidden;
+      }
+    }
+    .icon-box {
+      .fa-accessible-icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+    .searchDataCatalog {
+      background: $themeBgSecondary;
+      .searchBoxHolder {
+        justify-content: center;
+      }
+      .searchDiv {
+        position: relative;
+        border-radius: 3px;
+        background-color: $themeBgPrimary;
+        &:hover {
+          background-color: lighten($themeBgPrimary, 25%);
+        }
+
+        margin-left: 0;
+        width: 100%;
+      }
+      .inputHolder {
+        width: 100%;
+      }
+      .searchIcon {
+        padding: 0;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 10px;
+        top: 0px;
+        z-index: 1;
+        a {
+          line-height: 0;
+        }
+      }
+      .searchInput {
+        padding: 10px;
+        padding-left: 10px;
+        width: 100%;
+      }
+    }
+  }
+  .light-bg {
+    display: flex;
+    flex-direction: column;
+    min-height: 78vh;
+    padding-top: 50px;
+  }
+
+  .assetsBoxMain {
+    box-shadow: -4px 4px 20px 0px #5959590d;
+    border: 1px #59595929 solid;
+
+    .assetsBox {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 300px;
+      justify-content: space-between;
+      padding: 1.5rem;
+
+      a {
+        color: #fff;
+        width: 115px;
+        padding: 10px;
+        margin-top: 15px;
+        border-radius: 4px;
+        font-weight: normal;
+        background: linear-gradient(90deg, #2e3192 0%, #ee3a46 100%);
+
+        &:hover {
+          background: linear-gradient(269deg, #2e3192 0%, #ee3a46 100%);
+        }
+      }
+
+      .icon {
+        svg {
+          width: 32px;
+          height: 32px;
+          background: linear-gradient(60deg, #a6ce39, #9cc724);
+          padding: 15px;
+          margin-top: -40px;
+          border-radius: 4px;
+
+          color: #fff;
+        }
+      }
+      h6 {
+        padding: 0.5rem 0;
+        color: #2e3192;
+        font-size: 1.15rem;
+        font-weight: 700;
+      }
+
+      ul {
+        flex: auto;
+
+        li {
+          padding: 0;
+          line-height: 28px;
+          color: rgba(0, 0, 0, 0.87);
+          font-weight: normal;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  .assetsBg {
+    background: $themeBgSecondary;
+    color: $textColorSecondary;
+    min-height: 250px;
+    h6,
+    h2 {
+      color: $textColorSecondary;
+      .headingCaption {
+        display: block;
+        font-size: 0.3em;
+      }
+    }
+    a {
+      color: $textColorSecondary;
+    }
+  }
+}

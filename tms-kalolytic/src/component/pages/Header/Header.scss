@@ -1,0 +1,71 @@
+@import '../../../colortheme.scss';
+body {
+	.mainNavbar {
+		box-shadow: -12px -18px 20px 20px #5959590d;
+		background: linear-gradient(90deg, #2e3192 0%, #ee3a46 100%);
+
+		.toolbar {
+			min-height: 50px;
+			padding: 0 30px;
+
+			.sectionDesktop {
+				ul {
+					li {
+						a {
+							font-weight: 600;
+							color: #e7e7e7;
+							&:hover,
+							&:focus {
+								color: #2e3192;
+							}
+						}
+						svg {
+							color: #e7e7e7;
+							&:hover,
+							&:focus {
+								color: #2e3192;
+							}
+						}
+					}
+				}
+			}
+		}
+		.logo {
+			flex-grow: 1;
+			a {
+				padding: 0.65rem;
+				display: inline-block;
+			}
+		}
+		.logoImage {
+			width: 124px;
+		}
+		.navbar {
+			display: flex;
+
+			.svgstroke {
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+
+		.profileMenu {
+			color: $anchorColor;
+			padding: 0px !important;
+
+			&:hover {
+				color: $anchorHover;
+			}
+		}
+	}
+	.dashboardHeader {
+		background: $themeBgSecondary;
+	}
+	.headerContainer {
+		display: flex;
+	}
+}
+svg path {
+	stroke: inherit;
+}

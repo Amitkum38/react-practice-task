@@ -1,0 +1,53 @@
+@import '../../../colortheme.scss';
+body {
+	.login-container {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.paper {
+		margin-top: 70px;
+		padding: 70px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid #ddd;
+		box-shadow: 1px 2px 3px #ccc;
+		background: #fff;
+	}
+	.loginForm {
+		width: 100%;
+		margin-top: 8px;
+
+		.resetPasswordcol {
+			$fontFamilyRoboto: "Roboto";
+			padding: 9px 5px;
+		}
+
+		.resetPasswordcol a {
+			font-size: 0.9em;
+			$fontFamilyRoboto: "Roboto";
+		}
+	}
+
+	.submit {
+		margin: 24px;
+	}
+	.brandLogo {
+		width: 150px;
+	}
+
+	.login-Footer a {
+		font-size: 0.9em;
+		$fontFamilyRoboto: "Roboto";
+	}
+
+	.login-Footer p {
+		font-size: 0.9em;
+		$fontFamilyRoboto: "Roboto";
+	}
+}
